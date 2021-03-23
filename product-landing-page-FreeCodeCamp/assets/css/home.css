@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root {
+  --white: #f2f2f2;
+  --white-light: rgba(242, 242, 242, 0.3);
+  --grey: rgba(147, 144, 144, 0.24);
+  --black: #182119;
+  --black-light: rgba(0, 0, 0, 0.58);
+  --orange: #ffa323;
+  --green-light: #cfe9e2;
+  --green-medium: #b5e9db;
+  --green-bold: #9cdfcd;
+}
 
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
