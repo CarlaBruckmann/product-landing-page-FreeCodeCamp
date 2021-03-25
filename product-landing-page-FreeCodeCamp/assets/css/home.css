@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 :root {
   --white: #f2f2f2;
@@ -18,3 +18,112 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html {
+  background-color: var(--orange);
+}
+
+/*svg*/
+.background-svg {
+  padding: 6.5em 0;
+  position: relative;
+  z-index: 1;
+}
+
+.background-svg:before,
+.background-svg:after {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 6.5em;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.background-svg:before {
+  left: 0;
+  top: -6.5em;
+}
+
+.background-svg:after {
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+  bottom: -6.5em;
+  left: 0;
+}
+/**/
+/*svg*/
+.background-svg.style1 {
+  background-color: var(--green-light);
+}
+.background-svg.style1:before,
+.background-svg.style1:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(207, 233, 226, 1)' /%3E%3C/svg%3E");
+}
+/**/
+/*svg*/
+.background-svg.style2 {
+  background-color: var(--green-medium);
+}
+.background-svg.style2:before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(181, 233, 219, 1)' /%3E%3C/svg%3E");
+  transform: rotateY(180deg);
+}
+.background-svg.style2:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(181, 233, 219, 1)' /%3E%3C/svg%3E");
+  transform: rotateX(180deg) rotateY(180deg);
+}
+/**/
+/*svg*/
+.background-svg.style4 {
+  background-color: var(--green-bold);
+}
+.background-svg.style4:before,
+.background-svg.style4:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(156, 223, 205, 1)' /%3E%3C/svg%3E");
+  transform: rotateY(180deg);
+}
+.background-svg.style4:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(156, 223, 205, 1)' /%3E%3C/svg%3E");
+  transform: rotateX(180deg) rotateY(180deg);
+}
+/**/
+/*svg*/
+.background-svg.style5 {
+  background-color: var(--white);
+}
+.background-svg.style5:before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:rgba(242, 242, 242, 1)' /%3E%3C/svg%3E");
+}
+/**/
+
+.wrapper-footer:after{
+  content: unset;
+}
+
+.container {
+  max-width: 2500px;
+  margin: 0 10%;
+  height: 800px;
+  position: relative;
+}
+
+
+.wrapper-header{
+  background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)100%), url("../img/IMG-header.jpg");
+  background-size:cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.wrapper-products{
+ background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)100%), url("../img/IMG-background.jpg");
+  background-size:cover;
+  background-position: center;
+  z-index: 0;
+}
+
+
