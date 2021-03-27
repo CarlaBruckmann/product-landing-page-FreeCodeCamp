@@ -19,11 +19,19 @@
   text-decoration: none;
 }
 html {
-  background-color: var(--orange);
+  background-color: var(--black);
 }
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+header {
+  height: auto;
+  background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
+    url("../img/IMG-header.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -54,8 +62,16 @@ hr,
   border: solid 1px;
 }
 
-hr {
+header hr {
+  border-color: var(--white-light);
+}
+
+main hr {
   border-color: var(--white);
+}
+
+footer hr {
+  border-color: var(--black);
 }
 
 /*svg*/
@@ -139,29 +155,112 @@ hr {
 .wrapper-footer:after {
   content: unset;
 }
-.d-flex {
+
+
+/*menu*/
+.header-flex{ 
+  position: fixed;
+  z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 2% 10% 0 85.6%;
+  
 }
+/**/
+
+.icon{
+      display: block;
+      cursor: pointer;
+      padding: 15px;
+      z-index: 9999;
+      border-color: var(--white-light);
+      border-radius: 5px;
+      
+
+  }
+
+  .p-1{
+      width: 30px;
+      height: 2px;
+      background-color: var(--white);
+      transition: 0.3s;
+  }
+
+  .p-2{
+      width: 30px;
+      height: 2px;
+      background-color: var(--white);
+      margin: 5px 0;
+      transition: 0.3s;
+  }
+
+  .p-3{
+      width: 30px;
+      height: 2px;
+      background-color: var(--white);
+      transition: 0.3s;
+  }
+
+  /* Icone hamburguer vira X */
+
+  .icon-x .p-1{  
+      transform: rotate(45deg) translate(5px, 7px);
+  }    
+
+  .icon-x .p-2{    
+      opacity: 0;
+  }
+
+  .icon-x .p-3{      
+      transform: rotate(-45deg) translate(2px, -6px);
+  }
+
+  .menu{
+      position: absolute;
+      left: -100rem;
+      top: 0;
+
+      background: #0a0a0a;
+      width: 50vh;
+      height: 100vh;        
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      transition: .4s;
+      visibility: hidden;
+      opacity: 0;
+  }
+
+  .menu li+li{
+      margin-top: 30px;
+  }
+
+  .menu a{
+      color: white;
+  }
+
+  .ativo.menu{
+      visibility: visible;
+      opacity: 1;
+      left: 0;
+  } 
+
+/**/
+
 
 .container {
   max-width: 2500px;
   margin: 0 10%;
-  height: 800px;
+  height: 600px;
+}
+
+.container-header{
   position: relative;
-}
-
-.wrapper-header {
-  background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
-    url("../img/IMG-header.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-}
-
-.wrapper-header hr {
-  border-color: var(--white-light);
+  padding: 16% 10%;
 }
 
 .wrapper-logo {
@@ -171,14 +270,15 @@ hr {
   border-radius: 50%;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper-products {
   background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
     url("../img/IMG-background.jpg");
   background-size: cover;
   background-position: center;
-  z-index: 0;
-}
-
-header .wrapper-logo{
-  margin-top: 15%;
 }
