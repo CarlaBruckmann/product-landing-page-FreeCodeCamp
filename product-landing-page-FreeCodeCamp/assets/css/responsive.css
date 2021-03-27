@@ -1,0 +1,26 @@
+@media screen and (max-width: 560px) {
+  h1 {
+    font-size: 32px;
+    padding: 0;
+    transition: 0.4s ease all;
+  }
+  h2 {
+    font-size: 18px;
+    padding: 10px 0 35px 0;
+    transition: 0.4s ease all;
+  }
+  img {
+    width: 18px;
+    height: 26.5px;
+    transition: 0.4s ease all;
+  }
+  .wrapper-logo {
+    width: 43px;
+    height: 43px;
+    transition: 0.4s ease all;
+  }
+  .header-flex {
+    padding: 2% 0 0 77.6%;
+    transition: 0.4s ease all;
+  }
+}
