@@ -23,11 +23,9 @@
 html {
   background-color: var(--black);
 }
-
 body {
   font-family: var(--font-family);
 }
-
 header {
   height: auto;
   background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
@@ -35,7 +33,6 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 h1 {
   font-weight: 700;
   font-size: 64px;
@@ -44,7 +41,6 @@ h1 {
   text-transform: uppercase;
   padding: 30px 0 20px 0;
 }
-
 h2 {
   font-weight: 300;
   font-size: 24px;
@@ -53,29 +49,61 @@ h2 {
   text-transform: uppercase;
   padding: 35px 0;
 }
+h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  text-transform: uppercase;
+  padding: 20px;
+  color: var(--black);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  padding: 30px 0;
+  color: var(--orange);
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.2px;
+  padding: 15px 25px;
+  color: var(--black);
+}
+
+spam {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 19px;
+  color: var(--white);
+}
+
+i {
+  font-size: 65px;
+  color: var(--orange);
+}
 
 img {
   width: 36px;
   height: 53px;
 }
-
 hr,
 .border {
   border: solid 1px;
 }
-
 header hr {
   border-color: var(--white-light);
 }
-
 main hr {
   border-color: var(--white);
 }
-
 footer hr {
   border-color: var(--black);
 }
-
 /*svg*/
 .background-svg {
   padding: 6.5em 0;
@@ -247,7 +275,6 @@ footer hr {
   font-weight: 300;
   font-size: 20px;
   line-height: 29px;
-  
 }
 
 .ativo.menu {
@@ -270,16 +297,62 @@ footer hr {
   border-radius: 50%;
 }
 
-.d-flex {
+.d-flex-column {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .container {
   max-width: 2500px;
   margin: 0 10%;
   height: 600px;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container hr {
+  width: 30%;
+}
+
+.wrapper-card {
+  width: 268px;
+  height: 383px;
+  margin-top: 100px;
+  border-color: var(--white);
+  background-color: var(--white-light);
+}
+
+.card-icon {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  margin: -75px 0 0 52px;
+  border-color: var(--white);
+  background-color: var(--white);
+  position: absolute;
+}
+
+.card-info {
+  padding-top: 110px;
+}
+
+.card-number {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border-color: var(--white);
+  margin: -110px 0 0 100px;
+  background-color: var(--green-light);
+  position: absolute;
 }
 
 .wrapper-products {

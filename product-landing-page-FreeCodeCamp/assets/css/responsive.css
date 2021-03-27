@@ -1,26 +1,53 @@
-@media screen and (max-width: 560px) {
+:root {
+  --transition: 0.4s ease all;
+}
+
+@media screen and (max-width: 1200px) {
+  .container hr {
+    width: 20%;
+    transition: var(--transition);
+  }
+}
+
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 32px;
     padding: 0;
-    transition: 0.4s ease all;
+    transition: var(--transition);
   }
   h2 {
     font-size: 18px;
     padding: 10px 0 35px 0;
-    transition: 0.4s ease all;
+    transition: var(--transition);
   }
-  img {
+  h3 {
+    font-size: 18px;
+    transition: var(--transition);
+  }
+
+   img {
     width: 18px;
     height: 26.5px;
-    transition: 0.4s ease all;
+    transition: var(--transition);
   }
   .wrapper-logo {
     width: 43px;
     height: 43px;
-    transition: 0.4s ease all;
+    transition: var(--transition);
   }
+  
   .header-flex {
     padding: 2% 0 0 77.6%;
-    transition: 0.4s ease all;
+    transition: var(--transition);
   }
+
+  .d-flex-row {
+    flex-direction: column;
+    transition: var(--transition);
+  }
+  .container hr {
+    width: 10%;
+    transition: var(--transition);
+  }
+ 
 }
