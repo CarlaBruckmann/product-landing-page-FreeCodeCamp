@@ -83,6 +83,7 @@ spam {
   color: var(--white);
 }
 
+
 i {
   font-size: 65px;
   color: var(--orange);
@@ -258,7 +259,7 @@ footer hr {
   justify-content: center;
   text-align: center;
 
-  transition: 0.4s;
+  transition: var(--transition);
   visibility: hidden;
   opacity: 0;
 }
@@ -268,6 +269,9 @@ footer hr {
 }
 .menu li {
   padding: 30px;
+}
+.menu ul li{
+  list-style-type: none;
 }
 
 .menu a {
@@ -295,8 +299,11 @@ footer hr {
 .wrapper-logo {
   width: 73px;
   height: 73px;
-  border-color: var(--white-light);
   border-radius: 50%;
+}
+
+header .wrapper-logo{
+  border-color: var(--white-light);
 }
 
 /*temporario*/
@@ -306,45 +313,50 @@ footer hr {
   height: 600px;
 }
 
-.container hr {
-  width: 30%;
-}
-
-
 /**/
-
 
 .container-auto{
   max-width: 2500px;
-  margin: 0 10% 10% 10%;
   height: auto;
 }
 
+.container1{
+  margin: 0 10% 10% 10%;
+}
 
-.d-flex-column {
+.container2{
+  margin: 0 10% 0 10%;
+}
+
+.d-flex{
   display: flex;
+}
+
+.d-flex-column{
   flex-direction: column;
+}
+
+.d-flex-row{ 
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.d-flex-center{
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.d-flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+.d-flex-space{
+  justify-content: space-between;
 }
 
-/*grid*/
 
 .d-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 15px;
-  margin-top: 30px;
 }
 
 .d-grid .box{
@@ -352,12 +364,16 @@ footer hr {
   align-self: center;
 }
 
-/**/
+.margin-top{
+  margin-top:30px;
+}
+
 .wrapper-card {
   width: 268px;
   height: 383px;
   margin-top: 100px;
   border-color: var(--white);
+  border-radius: 5px;
   background-color: var(--white-light);
 }
 
@@ -388,6 +404,29 @@ footer hr {
   margin: -110px 0 0 100px;
   background-color: var(--green-light);
   position: absolute;
+}
+
+.container-video{
+  margin-top: 70px;
+}
+
+.video{
+  border-color: var(--white);
+  left:0;
+}
+
+main .wrapper-media .container-auto .wrapper-logo{
+  border-color: var(--white);
+  margin-left: 88%;
+}
+
+main .wrapper-media .container-auto p{
+  border-bottom: solid 1px var(--white);
+  border-right: solid 1px var(--white);
+  padding-top: 70px;
+  margin-right: 40px;
+
+  
 }
 
 .wrapper-products {
