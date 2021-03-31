@@ -1,3 +1,5 @@
+
+
 function initMenu(){
     let icon = document.querySelector('.icon');
     let menu = document.querySelector('.menu');

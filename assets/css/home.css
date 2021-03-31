@@ -30,7 +30,7 @@ body {
 header {
   height: auto;
   background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
-    url("../img/IMG-header.jpg");
+    url("/assets/img/IMG-header.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -432,7 +432,7 @@ main .wrapper-media .container-auto p{
 
 .wrapper-products {
   background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4) 100%),
-    url("../img/IMG-background.jpg");
+    url("/assets/img/IMG-background.jpg");
   background-size: cover;
   background-position: center;
 }
