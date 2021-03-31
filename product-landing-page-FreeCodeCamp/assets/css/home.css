@@ -377,7 +377,8 @@ header .wrapper-logo{
   background-color: var(--white-light);
 }
 
-.wrapper-card:hover .card-number{
+.wrapper-card:hover .card-number,
+.wrapper-card:focus .card-number{
   background-color: var(--orange);
   transition: var(--transition);
 }
