@@ -363,7 +363,7 @@ header .wrapper-logo {
   grid-gap: 15px;
 }
 
-.d-grid .box {
+.d-grid .grid-box {
   justify-self: center;
   align-self: center;
 }
@@ -372,7 +372,7 @@ header .wrapper-logo {
   margin-top: 30px;
 }
 
-.wrapper-card {
+.wrapper-card-white {
   width: 268px;
   height: 383px;
   margin-top: 100px;
@@ -381,8 +381,8 @@ header .wrapper-logo {
   background-color: var(--white-light);
 }
 
-.wrapper-card:hover .card-number,
-.wrapper-card:focus .card-number {
+.wrapper-card-white:hover .card-number,
+.wrapper-card-white:focus .card-number {
   background-color: var(--orange);
   transition: var(--transition);
 }
