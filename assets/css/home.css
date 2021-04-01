@@ -191,13 +191,15 @@ footer hr {
 }
 
 /*menu*/
+
+
 .header-flex {
-  position: fixed;
   z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2% 10% 0 85.6%;
+  position: fixed;
 }
 
 .icon {
@@ -282,6 +284,7 @@ footer hr {
   font-weight: 300;
   font-size: 20px;
   line-height: 29px;
+  padding: 25px;
 }
 
 .ativo.menu {
