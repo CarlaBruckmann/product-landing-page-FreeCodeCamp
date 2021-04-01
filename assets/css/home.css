@@ -460,21 +460,18 @@ main .wrapper-media .container-auto p{
 
 
 /*keyframes*/
-header:hover .wrapper-logo img,
-header:focus .wrapper-logo img
-{
-  animation-name: animation-carrot;
-  animation-duration: 1s;
-}
 
+header:hover .wrapper-logo img,
+header:focus .wrapper-logo img,
 main .wrapper-media .container-auto .box-information:hover img,
 main .wrapper-media .container-auto .box-information:focus img
+
 {
-  animation-name: animation-carrot;
+  animation-name: animation-logo-carrot;
   animation-duration: 1.2s;
 }
 
-@keyframes animation-carrot{
+@keyframes animation-logo-carrot{
   0%{
     transform: scale(0.2);}
     
