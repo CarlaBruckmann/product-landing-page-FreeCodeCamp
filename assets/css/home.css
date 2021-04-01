@@ -107,6 +107,7 @@ main hr {
 footer hr {
   border-color: var(--black);
 }
+
 /*svg*/
 .background-svg {
   padding: 6.5em 0;
@@ -351,6 +352,9 @@ header .wrapper-logo{
   justify-content: space-between;
 }
 
+.d-flex-end{
+  justify-content: flex-end;
+}
 
 .d-grid{
   display: grid;
@@ -415,19 +419,32 @@ header .wrapper-logo{
   border-color: var(--white);
   left:0;
 }
-
-main .wrapper-media .container-auto .wrapper-logo{
-  border-color: var(--white);
-  margin-left: 88%;
+.box-video{
+  position: relative;
+  width: 50%;
+  height: 390px;
+}
+.box-video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box-information{
+  width: 50%;
 }
 
+
+main .wrapper-media .container-auto .box-logo .wrapper-logo{
+  border-color: var(--white); 
+}
 main .wrapper-media .container-auto p{
   border-bottom: solid 1px var(--white);
   border-right: solid 1px var(--white);
   padding-top: 70px;
-  margin-right: 40px;
-
-  
+  margin-right: 35px;
+  text-align: left;
 }
 
 .wrapper-products {
