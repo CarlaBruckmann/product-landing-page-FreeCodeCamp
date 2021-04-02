@@ -2,20 +2,19 @@
   --transition: 0.4s ease all;
 }
 
-@media screen and (min-width: 1900px){
-  .box-video{
+@media screen and (min-width: 1900px) {
+  .box-video {
     height: 500px;
-  }
-}
-  
-
-@media screen and (max-width: 1400px) {
-  .container1{
-    margin: 0 5% 5% 5%;
     transition: var(--transition);
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .container1 {
+    margin: 0 5% 5% 5%;
+    transition: var(--transition);
+  }
+}
 
 @media screen and (max-width: 1250px) {
   main hr {
@@ -26,9 +25,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
+  .wrapper-card-black {
+    margin: 80px 10px 250px 10px;
+    transition: var(--transition);
+  }
 }
-
 
 @media screen and (max-width: 800px) {
   h1 {
@@ -41,7 +42,7 @@
     padding: 10px 0 35px 0;
     transition: var(--transition);
   }
- 
+
   main hr {
     width: 10%;
     transition: var(--transition);
@@ -56,16 +57,23 @@
     flex-direction: column;
   }
 
-  .box-video{
+  .box-video {
     width: 100%;
   }
-  .box-information{
+  .box-information {
     width: 100%;
     margin-top: 50px;
     transition: var(--transition);
   }
-}
+  .wrapper-card-black {
+    margin: 80px 10px 20px 10px;
+  }
 
+  .big-card {
+    margin-bottom: 300px;
+    transition: var(--transition);
+  }
+}
 
 @media screen and (max-width: 650px) {
   h3 {
@@ -77,3 +85,38 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .small-card {
+    width: 270px;
+    height: 295px;
+    transition: var(--transition);
+  }
+
+  .medium-card {
+    width: 292px;
+    height: 317px;
+    transition: var(--transition);
+  }
+
+  .big-card {
+    width: 304px;
+    height: 334px;
+    transition: var(--transition);
+  }
+
+  .small-card .btn-1{
+    margin-top: 290px;
+    transition: var(--transition);
+    }
+    
+    .medium-card .btn-1 {
+      margin-top: 310px;
+      transition: var(--transition);
+    }
+    
+    .big-card .btn-1{
+      margin-top: 330px;
+      transition: var(--transition);
+    }
+  }

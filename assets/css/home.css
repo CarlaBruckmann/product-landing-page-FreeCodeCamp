@@ -8,6 +8,7 @@
   --black-light: rgba(0, 0, 0, 0.58);
   --black-medium: rgba(0, 0, 0, 0.904);
   --orange: #ffa323;
+  --orange-light: #ffc87ab6;
   --green-light: #cfe9e2;
   --green-medium: #b5e9db;
   --green-bold: #9cdfcd;
@@ -64,16 +65,20 @@ h4 {
   font-size: 18px;
   line-height: 29px;
   text-transform: uppercase;
-  padding: 30px 0;
   color: var(--orange);
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: var(--white);
 }
 
 p {
   font-weight: 300;
   font-size: 16px;
   line-height: 19.2px;
-  padding: 15px 25px;
-  color: var(--black);
 }
 
 spam {
@@ -83,30 +88,34 @@ spam {
   color: var(--white);
 }
 
-i {
-  font-size: 65px;
-  color: var(--orange);
-}
-
 img {
   width: 36px;
   height: 53px;
 }
+
 hr,
 .border {
   border: solid 1px;
 }
+
 header hr {
   border-color: var(--white-light);
 }
+
 main hr {
   border-color: var(--white);
   width: 30%;
 }
+
 footer hr {
   border-color: var(--black);
 }
 
+button a {
+  font-weight: 400;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+}
 /*svg*/
 .background-svg {
   padding: 6.5em 0;
@@ -321,14 +330,6 @@ header .wrapper-logo {
   height: auto;
 }
 
-.container1 {
-  margin: 0 10% 10% 10%;
-}
-
-.container2 {
-  margin: 0 10% 0 10%;
-}
-
 .d-flex {
   display: flex;
 }
@@ -351,7 +352,9 @@ header .wrapper-logo {
 .d-flex-space {
   justify-content: space-between;
 }
-
+.d-flex-start {
+  justify-content: flex-start;
+}
 .d-flex-end {
   justify-content: flex-end;
 }
@@ -372,6 +375,9 @@ header .wrapper-logo {
   margin-top: 30px;
 }
 
+.container1 {
+  margin: 0 10% 10% 10%;
+}
 .wrapper-card-white {
   width: 268px;
   height: 383px;
@@ -379,6 +385,20 @@ header .wrapper-logo {
   border-color: var(--white);
   border-radius: 5px;
   background-color: var(--white-light);
+}
+
+.wrapper-card-white h4 {
+  padding: 30px 0;
+}
+
+.wrapper-card-white i {
+  font-size: 65px;
+  color: var(--orange);
+}
+
+.wrapper-card-white p {
+  padding: 15px 25px;
+  color: var(--black);
 }
 
 .wrapper-card-white:hover .card-number,
@@ -411,6 +431,9 @@ header .wrapper-logo {
   position: absolute;
 }
 
+.container2 {
+  margin: 0 10% 0 10%;
+}
 .container-video {
   margin-top: 70px;
 }
@@ -434,6 +457,10 @@ header .wrapper-logo {
 .box-information {
   width: 50%;
 }
+.box-information p {
+  padding: 15px 25px;
+  color: var(--black);
+}
 
 main .wrapper-media .container-auto .box-information .box-logo .wrapper-logo {
   border-color: var(--white);
@@ -454,13 +481,111 @@ main .wrapper-media .container-auto p {
   background-position: center;
 }
 
+.title-container3 {
+  padding-top: 200px;
+}
+
+.title-container3 h3 {
+  color: var(--orange);
+}
+
+.wrapper-card-black {
+  margin: 80px 50px 250px 50px;
+  border-color: var(--white-light);
+  border-radius: 10px;
+  background-color: var(--black-light);
+}
+.wrapper-card-black:hover,
+.wrapper-card-black:focus {
+  transform: scale(1.1);
+  transition: var(--transition);
+}
+.wrapper-card-black:hover .btn-1,
+.wrapper-card-black:focus .btn-1 {
+  box-shadow: 3px 5px 10px var(--orange-light);
+}
+.btn-1:hover,
+.btn-1:focus {
+  background-color: var(--white);
+  border-color: var(--grey);
+  transition: var(--transition);
+}
+
+.wrapper-card-black h5 {
+  padding: 15px 0;
+}
+.wrapper-card-black hr {
+  width: 190px;
+}
+.wrapper-card-black p {
+  padding-top: 15px;
+  color: var(--white-light);
+}
+
+.check-list {
+  padding: 10px 0 20px 0;
+}
+
+.check-list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-list-item i,
+.check-list-item p {
+  padding: 2px;
+}
+.check-list-item i {
+  font-size: 20px;
+  color: var(--orange);
+}
+
+.small-card {
+  width: 300px;
+  height: 310px;
+}
+
+.medium-card {
+  width: 322px;
+  height: 332px;
+}
+
+.big-card {
+  width: 334px;
+  height: 349px;
+}
+
+.btn-1 {
+  background-color: var(--orange);
+  border-radius: 100px;
+  border-color: var(--white);
+  padding: 8px 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn-1 a {
+  font-size: 18px;
+  color: var(--black);
+}
+
+.small-card .btn-1 {
+  margin-top: 310px;
+}
+
+.medium-card .btn-1 {
+  margin-top: 330px;
+}
+
+.big-card .btn-1 {
+  margin-top: 350px;
+}
+
 /*keyframes*/
 
 header .wrapper-logo img,
 main .wrapper-media .container-auto .box-information:hover img,
-main .wrapper-media .container-auto .box-information:focus img
-
-{
+main .wrapper-media .container-auto .box-information:focus img {
   animation-name: animation-logo-carrot;
   animation-duration: 2s;
 }
