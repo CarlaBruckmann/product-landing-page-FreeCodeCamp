@@ -8,7 +8,6 @@
   --black-light: rgba(0, 0, 0, 0.58);
   --black-medium: rgba(0, 0, 0, 0.904);
   --orange: #ffa323;
-  --orange-light: #ffc87ab6;
   --green-light: #cfe9e2;
   --green-medium: #b5e9db;
   --green-bold: #9cdfcd;
@@ -519,7 +518,7 @@ main .wrapper-media .container-auto p {
 }
 .wrapper-card-black p {
   padding-top: 15px;
-  color: var(--white-light);
+  color: var(--green-light);
 }
 
 .check-list {
