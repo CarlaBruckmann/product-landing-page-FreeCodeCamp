@@ -80,6 +80,10 @@ p {
   line-height: 19.2px;
 }
 
+u {
+  color: var(--orange);
+}
+
 spam {
   font-weight: 900;
   font-size: 20px;
