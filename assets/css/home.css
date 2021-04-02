@@ -337,6 +337,11 @@ header .wrapper-logo {
   display: flex;
 }
 
+.d-flex-fixed {
+  display: flex;
+  flex-direction: row;
+}
+
 .d-flex-column {
   flex-direction: column;
 }
@@ -527,11 +532,6 @@ main .wrapper-media .container-auto p {
 
 .check-list {
   padding: 10px 0 20px 0;
-}
-
-.check-list-item {
-  display: flex;
-  flex-direction: row;
 }
 
 .check-list-item i,
