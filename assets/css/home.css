@@ -50,15 +50,20 @@ h2 {
   text-transform: uppercase;
   padding: 35px 0;
 }
-h3 {
+h3, label {
   font-weight: 700;
   font-size: 30px;
   line-height: 29px;
   text-transform: uppercase;
-  padding: 20px;
   color: var(--black);
 }
+h3{
+  padding: 20px;
+}
+label{
+  text-align: left;
 
+}
 h4 {
   font-weight: 700;
   font-size: 18px;
@@ -80,7 +85,7 @@ p {
   line-height: 19.2px;
 }
 
-u {
+strong {
   color: var(--orange);
 }
 
@@ -91,10 +96,6 @@ spam {
   color: var(--white);
 }
 
-img {
-  width: 36px;
-  height: 53px;
-}
 
 hr,
 .border {
@@ -261,16 +262,16 @@ button a {
   position: absolute;
   left: -100rem;
   top: 0;
-
+  
   background: var(--black-medium);
   width: 50vh;
   height: 100vh;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  
   transition: var(--transition);
   visibility: hidden;
   opacity: 0;
@@ -313,6 +314,11 @@ button a {
   width: 73px;
   height: 73px;
   border-radius: 50%;
+}
+
+.wrapper-logo img {
+  width: 36px;
+  height: 53px;
 }
 
 header .wrapper-logo {
@@ -439,7 +445,7 @@ header .wrapper-logo {
   position: absolute;
 }
 
-.container2 {
+.container2, .container4 {
   margin: 0 10% 0 10%;
 }
 .container-video {
@@ -584,6 +590,30 @@ main .wrapper-media .container-auto p {
   margin-top: 350px;
 }
 
+.wrapper-newsletter{
+  padding: 50px 0 100px 0;
+}
+.wrapper-newsletter .img-newsletter{
+  width: 50%;
+  margin-right: 90px;
+}
+
+.wrapper-newsletter .img-newsletter img{
+  width: 100%;
+  height: auto;
+  padding: 0 0 15px 15px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.wrapper-newsletter .img-newsletter p{
+  text-align: left;
+  padding: 15px 0 0 15px;
+}
+
+.wrapper-newsletter .form-newsletter{
+  width: 50%;
+}
 /*keyframes*/
 
 header .wrapper-logo img,

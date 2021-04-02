@@ -48,6 +48,11 @@
     transition: var(--transition);
   }
 
+  label{
+    text-align: center;
+    transition: var(--transition);
+  }
+
   .header-flex {
     padding: 2% 0 0 77.6%;
     transition: var(--transition);
@@ -73,10 +78,23 @@
     margin-bottom: 300px;
     transition: var(--transition);
   }
+
+  .wrapper-newsletter .img-newsletter {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  .wrapper-newsletter .form-newsletter {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transition: var(--transition);
+  }
 }
 
 @media screen and (max-width: 650px) {
-  h3 {
+  h3,
+  label {
     font-size: 20px;
     transition: var(--transition);
   }
@@ -105,18 +123,18 @@
     transition: var(--transition);
   }
 
-  .small-card .btn-1{
+  .small-card .btn-1 {
     margin-top: 290px;
     transition: var(--transition);
-    }
-    
-    .medium-card .btn-1 {
-      margin-top: 310px;
-      transition: var(--transition);
-    }
-    
-    .big-card .btn-1{
-      margin-top: 330px;
-      transition: var(--transition);
-    }
   }
+
+  .medium-card .btn-1 {
+    margin-top: 310px;
+    transition: var(--transition);
+  }
+
+  .big-card .btn-1 {
+    margin-top: 330px;
+    transition: var(--transition);
+  }
+}
