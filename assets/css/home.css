@@ -50,7 +50,7 @@ h2 {
   text-transform: uppercase;
   padding: 35px 0;
 }
-h3, label {
+h3, label{
   font-weight: 700;
   font-size: 30px;
   line-height: 29px;
@@ -71,12 +71,10 @@ h4 {
   color: var(--orange);
 }
 
-
-h5, form :nth-child(2) {
+h5 {
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
-  color: var(--white);
 }
 
 p,
@@ -327,15 +325,6 @@ header .wrapper-logo {
   border-color: var(--white-light);
 }
 
-/*temporario*/
-.container {
-  max-width: 2500px;
-  margin: 0 10%;
-  height: 600px;
-}
-
-/**/
-
 .container-auto {
   max-width: 2500px;
   height: auto;
@@ -529,6 +518,7 @@ main .wrapper-media .container-auto p {
 
 .wrapper-card-black h5 {
   padding: 15px 0;
+    color: var(--white);
 }
 .wrapper-card-black hr {
   width: 190px;
@@ -592,7 +582,7 @@ main .wrapper-media .container-auto p {
   margin-top: 350px;
 }
 
-.container4{
+.container4, .container-footer{
   margin: 0 10% 3% 10%;
 }
 
@@ -636,12 +626,16 @@ form :nth-child(1){
 }
 
 form :nth-child(2){
- width: 90px;
+ width: 140px;
  height: 58px;
  background-color:var(--orange);
  border-color: var(--orange);
  border-radius: 0 10px 10px 0;
- color:var(--black);
+ font-weight: 300;
+ font-size: 20px;
+ line-height: 29px;
+ color:var(--white);
+ cursor: pointer;
  
 } 
 
@@ -650,16 +644,32 @@ form :nth-child(2):focus{
   box-shadow: 3px 5px 15px var(--white);
   transform: scale(1.1);
   border-radius: 10px;
-  color:var(--white);
   transition: var(--transition);
+}
+
+.container-footer .footer-logo{
+  padding:20px 10px 0 0;
+}
+.container-footer .footer-logo h3{
+  padding: 30px 0 20px 0;
+}
+
+.container-footer .footer-logo p{
+  padding-top: 20px;
+  color:var(--orange);
+  text-transform: uppercase;
+}
+.container-footer .footer-logo hr,
+.container-footer .footer-logo .wrapper-logo{
+  border-color:var(--black-light);
 }
 
 
 /*keyframes*/
 
-header .wrapper-logo img,
+header .wrapper-logo img, 
 main .wrapper-media .container-auto .box-information:hover img,
-main .wrapper-media .container-auto .box-information:focus img {
+main .wrapper-media .container-auto .box-information:focus img{
   animation-name: animation-logo-carrot;
   animation-duration: 2s;
 }
