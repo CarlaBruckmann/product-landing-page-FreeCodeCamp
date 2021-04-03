@@ -62,7 +62,6 @@ h3{
 }
 label{
   text-align: left;
-
 }
 h4 {
   font-weight: 700;
@@ -72,14 +71,17 @@ h4 {
   color: var(--orange);
 }
 
-h5 {
+
+h5, form :nth-child(2) {
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
   color: var(--white);
 }
 
-p {
+p,
+form :nth-child(1){
+  font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 19.2px;
@@ -445,7 +447,7 @@ header .wrapper-logo {
   position: absolute;
 }
 
-.container2, .container4 {
+.container2 {
   margin: 0 10% 0 10%;
 }
 .container-video {
@@ -516,13 +518,13 @@ main .wrapper-media .container-auto p {
 }
 .wrapper-card-black:hover .btn-1,
 .wrapper-card-black:focus .btn-1 {
-  box-shadow: 3px 5px 10px var(--orange-light);
+  box-shadow: 3px 5px 10px var(--white-light);
 }
 .btn-1:hover,
 .btn-1:focus {
   background-color: var(--white);
   border-color: var(--grey);
-  transition: var(--transition);
+  transition: var(--transition); 
 }
 
 .wrapper-card-black h5 {
@@ -544,7 +546,7 @@ main .wrapper-media .container-auto p {
 .check-list-item p {
   padding: 2px;
 }
-.check-list-item i {
+.check-list-item i{
   font-size: 20px;
   color: var(--orange);
 }
@@ -590,6 +592,10 @@ main .wrapper-media .container-auto p {
   margin-top: 350px;
 }
 
+.container4{
+  margin: 0 10% 3% 10%;
+}
+
 .wrapper-newsletter{
   padding: 50px 0 100px 0;
 }
@@ -613,7 +619,42 @@ main .wrapper-media .container-auto p {
 
 .wrapper-newsletter .form-newsletter{
   width: 50%;
+
 }
+
+form{
+  margin-top: 20px;
+}
+
+form :nth-child(1){
+  width: 100%;
+  height: 58px;
+  border-color: var(--orange);
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+  background-color: var(--white-light);
+}
+
+form :nth-child(2){
+ width: 90px;
+ height: 58px;
+ background-color:var(--orange);
+ border-color: var(--orange);
+ border-radius: 0 10px 10px 0;
+ color:var(--black);
+ 
+} 
+
+form :nth-child(2):hover,
+form :nth-child(2):focus{
+  box-shadow: 3px 5px 15px var(--white);
+  transform: scale(1.1);
+  border-radius: 10px;
+  color:var(--white);
+  transition: var(--transition);
+}
+
+
 /*keyframes*/
 
 header .wrapper-logo img,
