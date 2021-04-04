@@ -592,6 +592,9 @@ form :nth-child(2):focus {
 .container-footer .footer-logo .wrapper-logo {
   border-color: var(--black-light);
 }
+.container-footer a:hover{
+  color:var(--orange);
+}
 .container-footer .contacts i {
   font-size: 25px;
   color: var(--black-light);
