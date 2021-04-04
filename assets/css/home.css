@@ -631,7 +631,7 @@ form :nth-child(2):focus {
 .icons a{
   font-size: 30px;
   color: var(--grey);
-  padding: 15px;
+  margin: 15px;
   cursor: pointer;
 }
 .icons a:hover{
