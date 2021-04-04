@@ -606,7 +606,7 @@ form :nth-child(2):focus {
 .container-footer .social-media i {
   font-size: 50px;
   color: var(--black-light);
-  padding: 15px 15px 5px 0;
+  margin: 15px 15px 5px 0;
   cursor: pointer;
 }
 .container-footer .social-media i:hover {
