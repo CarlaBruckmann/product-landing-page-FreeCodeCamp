@@ -1,21 +1,18 @@
 :root {
   --transition: 0.4s ease all;
 }
-
 @media screen and (min-width: 1900px) {
   .box-video {
     height: 500px;
     transition: var(--transition);
   }
 }
-
 @media screen and (max-width: 1400px) {
   .container1 {
     margin: 0 5% 5% 5%;
     transition: var(--transition);
   }
 }
-
 @media screen and (max-width: 1250px) {
   main hr {
     width: 19%;
@@ -29,8 +26,11 @@
     margin: 80px 10px 250px 10px;
     transition: var(--transition);
   }
-}
 
+  .container-footer .certificates {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 32px;
@@ -48,7 +48,7 @@
     transition: var(--transition);
   }
 
-  label{
+  label {
     text-align: center;
     transition: var(--transition);
   }
@@ -91,7 +91,7 @@
     transition: var(--transition);
   }
 
-  form :nth-child(1){
+  form :nth-child(1) {
     width: 80%;
     height: 70px;
     border-radius: 10px;
@@ -99,15 +99,13 @@
     transition: var(--transition);
   }
 
-form :nth-child(2){
-  height: 70px;
-  border-radius: 10px;
-  margin-top: 40px;
-  transition: var(--transition);
-  
- } 
+  form :nth-child(2) {
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: var(--transition);
+  }
 }
-
 @media screen and (max-width: 650px) {
   h3,
   label {
@@ -118,8 +116,21 @@ form :nth-child(2){
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-}
 
+  .container-footer hr {
+    width: 80%;
+  }
+
+  .container-footer .wrapper-contacts {
+    margin-top: 50px;
+    transition: var(--transition);
+  }
+
+  .container-footer .certificates {
+    margin-top: 50px;
+    transition: var(--transition);
+  }
+}
 @media screen and (max-width: 400px) {
   .small-card {
     width: 270px;
@@ -152,5 +163,8 @@ form :nth-child(2){
   .big-card .btn-1 {
     margin-top: 330px;
     transition: var(--transition);
+  }
+  .container-footer hr {
+    width: 100%;
   }
 }

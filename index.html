@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Carla Bruckmann" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -18,7 +17,6 @@
       sizes="32x32"
       href="assets/layout/favicon/favicon-32x32.png"
     />
-
     <link
       rel="icon"
       type="image/png"
@@ -28,7 +26,6 @@
     <link rel="manifest" href="assets/layout/favicon/site.webmanifest" />
     <title>Carrot Farm</title>
   </head>
-
   <body>
     <div id="wrapper-main">
       <header id="header">
@@ -73,7 +70,6 @@
           </section>
         </section>
       </header>
-
       <main>
         <section
           class="wrapper-informations background-svg style1"
@@ -106,7 +102,6 @@
                   </div>
                 </section>
               </div>
-
               <div class="wrapper-card-white border grid-box">
                 <section>
                   <div class="card-icon d-flex d-flex-row d-flex-center border">
@@ -127,7 +122,6 @@
                   </div>
                 </section>
               </div>
-
               <div class="wrapper-card-white border grid-box">
                 <section>
                   <div class="card-icon d-flex d-flex-row d-flex-center border">
@@ -149,7 +143,6 @@
                   </div>
                 </section>
               </div>
-
               <div class="wrapper-card-white border grid-box">
                 <section>
                   <div class="card-icon d-flex d-flex-row d-flex-center border">
@@ -173,7 +166,6 @@
             </section>
           </div>
         </section>
-
         <section class="wrapper-media background-svg style2">
           <div class="container-auto container2">
             <section class="d-flex d-flex-row d-flex-center">
@@ -219,7 +211,6 @@
             </section>
           </div>
         </section>
-
         <section id="products" class="wrapper-products">
           <div class="container-auto container3">
             <div class="d-flex d-flex-row d-flex-center title-container3">
@@ -254,7 +245,6 @@
                   <a href="#">Comprar</a>
                 </button>
               </div>
-
               <div
                 class="wrapper-card-black medium-card d-flex d-flex-center d-flex-column border"
               >
@@ -281,7 +271,6 @@
                   <a href="#">Comprar</a>
                 </button>
               </div>
-
               <div
                 class="wrapper-card-black big-card d-flex d-flex-center d-flex-column border"
               >
@@ -332,7 +321,8 @@
                   >Receba nossas novidades!</label
                 >
                 <div>
-                  <form class= "d-flex d-flex-row d-flex-center"
+                  <form
+                    class="d-flex d-flex-row d-flex-center"
                     id="form"
                     action="https://www.freecodecamp.com/email-submit"
                   >
@@ -361,30 +351,91 @@
       </main>
       <footer>
         <section id="contact" class="wrapper-footer background-svg style4">
-          <div class="container-auto container-footer d-flex d-flex-row">
+          <div class="container-auto container-footer d-grid">
             <section class="footer-logo">
               <div
-                    class="wrapper-logo d-flex d-flex-center s-flex-column border"
-                  >
-                    <img
-                      src="assets/img/logo-carrot.png"
-                      alt="Logo Carrot Farm"
-                    />
-                  </div>
-                  <div>
-                    <h3>Carrot Farm</h3>
-                    <hr />
-                    <p>Produtos Orgânicos</p>
-                  </div>
+                class="wrapper-logo d-flex d-flex-center s-flex-column border"
+              >
+                <img src="assets/img/logo-carrot.png" alt="Logo Carrot Farm" />
+              </div>
+              <div>
+                <h3>Carrot Farm</h3>
+                <hr />
+                <p>Produtos Orgânicos</p>
+              </div>
             </section>
-
-            <section></section>
-
-            <section></section>
-
-            <section></section>
+            <section class="d-flex d-flex-column d-flex-start">
+              <h4>Informações:</h4>
+              <hr />
+              <a href="#">Locais de Entrega</a>
+              <a href="#">Vantagens e Garantias</a>
+              <a href="#">Perguntas e Respostas</a>
+              <a href="#">Produtores e Parceiros</a>
+              <a href="#">Termos de Uso</a>
+              <a href="#">Área do Cliente</a>
+            </section>
+            <section class="wrapper-contacts d-flex d-flex-column d-flex-start">
+              <h4>Contatos:</h4>
+              <hr />
+              <div class="d-flex-fixed contacts">
+                <i class="fas fa-envelope-square"></i>
+                <p>contato@carrotfarm.com.br</p>
+              </div>
+              <div class="d-flex-fixed contacts">
+                <i class="fab fa-whatsapp-square"></i>
+                <p>(xx) xxxx-xxxx</p>
+              </div>
+              <div class="d-flex-fixed social-media">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-pinterest-square"></i>
+              </div>
+            </section>
+            <section class="certificates">
+              <h4>Produtos Certificados:</h4>
+              <hr />
+              <div class="d-flex-fixed">
+                <img
+                  alt="Selo de qualidade"
+                  class="stamp-1"
+                  src="./assets/img/selo1.png"
+                />
+                <img
+                  alt="Selo de qualidade"
+                  class="stamp-2"
+                  src="./assets/img/selo2.png"
+                />
+                <img
+                  alt="Selo de qualidade"
+                  class="stamp-3"
+                  src="./assets/img/selo3.png"
+                />
+                <img
+                  alt="Selo de qualidade"
+                  class="stamp-4"
+                  src="./assets/img/selo4.png"
+                />
+              </div>
+            </section>
           </div>
         </section>
+        <div class="icons d-flex-fixed d-flex-center">
+          <a
+            title="Free Code Camp"
+            href="https://www.freecodecamp.org/carlabruckmann"
+            class="fab fa-free-code-camp"
+          ></a>
+          <a
+            title="GitHub"
+            href="https://github.com/CarlaBruckmann"
+            class="fab fa-github"
+          ></a>
+          <a
+            title="Linkedin"
+            href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
+            class="fab fa-linkedin"
+          ></a>
+        </div>
       </footer>
     </div>
     <script
