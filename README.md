@@ -10,9 +10,9 @@
 ### :white_check_mark: Tecnologias utilizadas: `HTML5`,`CSS3`,`JavaScript`.
 
 
-🌎 [Product Landing Page - Carrot Farm](https://carlabruckmann.github.io/product-landing-page-FreeCodeCamp/)
+#### 🌎 *[Product Landing Page - Carrot Farm](https://carlabruckmann.github.io/product-landing-page-FreeCodeCamp/)*
 
-🌎  *[CodePen](https://bit.ly/3cOq7GV)* - *[freeCodeCamp](https://www.freecodecamp.org/carlabruckmann)* 
+#### 🌎  *[CodePen](https://bit.ly/3cOq7GV)* - *[freeCodeCamp](https://www.freecodecamp.org/carlabruckmann)* 
 
 [Preview - Home]
 <img src="https://github.com/CarlaBruckmann/product-landing-page-FreeCodeCamp/blob/master/preview/home.png" alt="preview home" width="100%"/>
